@@ -1,0 +1,17 @@
+Files in this program include this README, makefile, parser.l and parser.y. 
+Additional files are generated such as lex.yy.c and parser.tab.h after compiling the program
+
+To compile the program use the make command
+
+To run the program execute the executable parser and add an input file example: ./parser <filename>
+
+The program reads the contents of the input file token by token and checks each token with the rules declared in the .l file
+It does this until reaching a new line token token or an error. If there are no errors the program adds a VALID statement at the end.
+If there is an error the program continues to read and reprint the input line and then prints an INVALID statement
+and a reason why at the end of the line. Repeats this process until EOF.
+
+There are no extra features or functionality
+
+There are no known bugs as of submission
+
+Learning Flex and Bison was very weird how it meshed c++ coding with a lot of new tools. Might be a useful tool in the future.
